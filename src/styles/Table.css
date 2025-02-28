@@ -1,0 +1,148 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: #007bff;
+  color: white;
+}
+
+th {
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+td {
+  padding: 12px 16px;
+  font-size: 15px;
+  color: #333;
+}
+
+td input {
+  width: 70px;
+  padding: 6px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  outline: none;
+  background: #ffffff;
+  transition: 0.2s ease-in-out;
+}
+
+td input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+td:last-child {
+  font-weight: 600;
+  color: #d32f2f;
+}
+
+.grand-total {
+  background: #f1f3f5;
+  font-weight: bold;
+  border-top: 2px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  table {
+    width: 95%;
+  }
+
+  th,
+  td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  button {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  td input {
+    width: 50px;
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  th,
+  td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  button {
+    padding: 4px 6px;
+    font-size: 11px;
+  }
+
+  td input {
+    width: 45px;
+    padding: 4px;
+    font-size: 11px;
+  }
+}
